@@ -1,0 +1,129 @@
+{
+  "kind": "prerecorded_local_neural_synthesis",
+  "live_ai": false,
+  "engine": "VoxCPM2-8bit (MLX)",
+  "voice": "synthetic-calm-woman",
+  "human_voice_cloning": false,
+  "subjective_listening": "not_performed",
+  "lines": {
+    "welcome": {
+      "text": "都下班了？很好。那我也……就再看一眼。",
+      "file": "ceo-premium/audio/welcome.mp3",
+      "duration": 5.86,
+      "seed": 20261101,
+      "sha256": "b0e6e8ed9ed81d7c33faba32983ded0c15abd9cc7933da3b8407826e380d2273"
+    },
+    "coffee1": {
+      "text": "咖啡不错。你的提议，我再考虑一下。",
+      "file": "ceo-premium/audio/coffee1.mp3",
+      "duration": 5.1,
+      "seed": 20261102,
+      "sha256": "107d806618ed54fd990d954018f714a19c23127605bd966a1e554c135411c0e9"
+    },
+    "coffee2": {
+      "text": "这杯子，比我的野心还大。",
+      "file": "ceo-premium/audio/coffee2.mp3",
+      "duration": 3.22,
+      "seed": 20261103,
+      "sha256": "52e1dda37a283fd955ea02f7b38c6b3f0df630dd576971637be3a9dfb3d32b86"
+    },
+    "coffee3": {
+      "text": "行。今晚不睡的，原来是我。",
+      "file": "ceo-premium/audio/coffee3.mp3",
+      "duration": 4.9,
+      "seed": 20261104,
+      "sha256": "047d4b5924b6c57dc6df1cb5875a2c46261d4c9220d1beff3e560de68606f277"
+    },
+    "wind1": {
+      "text": "谁开的风？我的发型，有自己的想法。",
+      "file": "ceo-premium/audio/wind1.mp3",
+      "duration": 5.32,
+      "seed": 20261105,
+      "sha256": "60f8ca1a50510220fa65c9abeb7b17dc1551cf898243907dd2de796515bf9e6b"
+    },
+    "wind2": {
+      "text": "别吹了。报表真的要起飞了。",
+      "file": "ceo-premium/audio/wind2.mp3",
+      "duration": 3.72,
+      "seed": 20261106,
+      "sha256": "ccec7e3e384700b1f6977df1586ef43cf0c0693f335f1b1b664a9fe42ea60f2d"
+    },
+    "wind3": {
+      "text": "行了，报表先下班。你们也下班！",
+      "file": "ceo-premium/audio/wind3.mp3",
+      "duration": 3.52,
+      "seed": 20261107,
+      "sha256": "8f3c21b288bfa15eda2e9e2495dd77561ce22b3571595259841131933a19aad6"
+    },
+    "party1": {
+      "text": "上班时间，谁批准放礼花的？",
+      "file": "ceo-premium/audio/party1.mp3",
+      "duration": 2.98,
+      "seed": 20261108,
+      "sha256": "750dce15d4130ca4ada8a9b2076583a9344c35675ff719b8059a30cb2f97b625"
+    },
+    "party3": {
+      "text": "别录！这段，绝对不能发公司群！",
+      "file": "ceo-premium/audio/party3.mp3",
+      "duration": 3.446417,
+      "seed": 20261110,
+      "sha256": "5a426f3dc94cb4f1202f934e5ddd039e3142ba58ec3d323255c1a608c00771b5"
+    },
+    "leave": {
+      "text": "下班？先把这份……算了，明天再说。",
+      "file": "ceo-premium/audio/leave.mp3",
+      "duration": 4.86,
+      "seed": 20261111,
+      "sha256": "f0397f21013d07c9d8be380b4caa68058ba06ed85b2127cbe0111cf8b3d3d99e"
+    },
+    "praise": {
+      "text": "眼光不错。这句话，可以再说一遍。",
+      "file": "ceo-premium/audio/praise.mp3",
+      "duration": 5.279083,
+      "seed": 20261113,
+      "sha256": "a668311f278d28ef2a7c1a93ce1f58b42628a2f1546f10990f014e0ae52777b0"
+    },
+    "dance": {
+      "text": "想看我跳舞？先把音乐关了。",
+      "file": "ceo-premium/audio/dance.mp3",
+      "duration": 3.28,
+      "seed": 20261114,
+      "sha256": "d8c6708a63e38d64af4ed1a5c4858997a018fc6ec896d0e92a84cb09dc29653c"
+    },
+    "hello": {
+      "text": "新来的？坐。今天允许你拆一次台。",
+      "file": "ceo-premium/audio/hello.mp3",
+      "duration": 4.76,
+      "seed": 20261215,
+      "sha256": "3e4d38f3ed67672af96b5fdda73a2ed084a97b339ae82afe2d8bd630dfff409a"
+    },
+    "win": {
+      "text": "行，我认输。今天全员，准点下班。",
+      "file": "ceo-premium/audio/win.mp3",
+      "duration": 4.3,
+      "seed": 20261216,
+      "sha256": "e49fb28f090ae4da229df54b4bb345b519015d83d3c3de0728f435c13abc5518"
+    },
+    "party2": {
+      "text": "这不是跳舞。是椅子，自己在动。",
+      "file": "ceo-premium/audio/party2.mp3",
+      "duration": 4.714229,
+      "seed": 20261309,
+      "sha256": "100a29eeeb518a29653f05065ba568bedb031d7f2beaae95a6601ac8452a7b68"
+    },
+    "raise": {
+      "text": "涨薪的建议，我听见了。先给你点个赞。",
+      "file": "ceo-premium/audio/raise.mp3",
+      "duration": 5.1,
+      "seed": 20261112,
+      "sha256": "787754e99ac782988cd360c1db645bbd8ecf850d2bb838303b66b23919979d07"
+    },
+    "end": {
+      "text": "今天就到这。下次，我一定稳得住。",
+      "file": "ceo-premium/audio/end.mp3",
+      "duration": 4.9,
+      "seed": 20261217,
+      "sha256": "0186c853179e02c266f00b22a20d6501d0e8c8bf8d62f36fe902eedf078e05f7"
+    }
+  }
+}

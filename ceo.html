@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a24"><meta name="description" content="总裁，请下班。90秒反差互动小剧场：发评论、送免费模拟礼物，看看你能不能让高冷总裁破功。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="总裁，请下班 · 90秒互动试玩"><meta property="og:description" content="她说今晚不加班。你信吗？三种免费模拟礼物，连送升级。">
+  <title>总裁，请下班 · AFTER HOURS</title><link rel="stylesheet" href="ceo.css"><script type="module" src="ceo-app.mjs"></script>
+</head>
+<body>
+<main class="shell">
+  <header class="header"><a class="brand" href="ceo.html"><span class="monogram">A<span>H</span></span><span>AFTER HOURS<small>下班后的另一面</small></span></a><nav><button id="shareTop">分享试玩 ↗</button></nav></header>
+  <section class="heading"><div><p class="eyebrow">INTERACTIVE COMEDY · VOL. 01</p><h1>总裁，<em>请下班。</em></h1></div><p class="lede">她的高冷，能撑几秒？<br><span>90 秒，和观众一起让她破功。</span></p></section>
+  <div class="layout">
+    <section class="cinema-column" aria-label="总裁互动小剧场">
+      <div class="stage" id="stage" data-effect="none">
+        <img src="ceo-premium/master.jpg" class="poster" alt="身穿深蓝西装的成年女总裁，坐在暮色中的办公室里">
+        <video id="filmA" class="film" playsinline muted preload="auto" aria-hidden="true"></video><video id="filmB" class="film" playsinline muted preload="none" aria-hidden="true"></video>
+        <div class="shade"></div><div id="effects" class="effects" aria-hidden="true"></div>
+        <div class="stage-top"><span class="episode"><i></i>沈总的下班时间<small>虚构角色 · AI 影像</small></span><span class="clock"><b id="seconds">90</b><small>SEC</small></span></div>
+        <div class="challenge"><div><span id="mood">高冷值，暂时在线</span><b><span id="score">0</span><small> / 100 破功</small></b></div><div class="track"><i id="scoreFill"></i></div></div>
+        <div id="impact" class="impact" hidden><span id="impactFrom"></span><strong id="impactTitle"></strong><small id="impactLevel"></small></div>
+        <div id="souvenirs" class="souvenirs" aria-label="本轮留下的名场面"></div>
+        <div class="dialogue"><span class="speaker">沈总<span id="lineContext">今晚，谁先破功？</span></span><p id="line">“我这个人，情绪非常稳定。”</p></div>
+        <div id="entry" class="entry"><span>今晚的任务</span><h2>让她说出<br><em>「准点下班」</em></h2><p>评论拆台，礼物加戏。<br>同一种礼物连送 3 次，反差拉满。</p><button id="start" class="primary" disabled>场景准备中…</button><small id="loading">正在准备角色演出</small></div>
+        <div id="pauseOverlay" class="overlay" hidden><span>稍等，她喝口水</span><h2>小剧场暂停中</h2><p>时间和演出都停在这里。</p><button id="resume" class="primary">继续互动 →</button></div>
+        <div id="result" class="overlay result" hidden><span id="resultKicker">本场名场面</span><h2 id="resultTitle"></h2><p id="resultCopy"></p><div class="results"><div><b id="resultGifts"></b><small>份模拟礼物已出演</small></div><div><b id="resultPeople"></b><small>位参与者</small></div></div><button id="again" class="primary">再拆一次台 →</button><button id="shareResult" class="secondary">把她分享给朋友 ↗</button></div>
+      </div>
+      <div class="transport"><button id="pause" disabled>Ⅱ 暂停</button><span id="mediaStatus">原创角色 · 固定女声</span><button id="sound" aria-pressed="true">声音开 ◖</button></div>
+    </section>
+    <aside class="panel">
+      <div class="panel-heading"><span class="eyebrow">YOU SET THE MOOD</span><span class="free-badge">免费试玩</span></div>
+      <h2>今晚，听你的。</h2><p class="panel-intro">说句话试探她，或者直接上点强度。</p>
+      <section class="comments-section" aria-label="评论互动">
+        <div class="section-label"><b>01 / 评论拆台</b><label class="nickname">我的昵称 <input id="nickname" aria-label="我的昵称" value="路过的小满" maxlength="16"></label></div>
+        <div class="quick"><button data-comment="总裁，下班啦！" disabled>下班啦 ↗</button><button data-comment="老板，该涨薪了" disabled>该涨薪了</button><button data-comment="总裁今天真好看" disabled>今天真好看</button><button data-comment="跳一个嘛" disabled>跳一个嘛</button></div>
+        <form id="commentForm"><label class="sr-only" for="comment">输入评论</label><input id="comment" maxlength="160" placeholder="想对沈总说什么？" autocomplete="off" disabled><button id="send" type="submit" disabled aria-label="发送评论">↑</button></form>
+        <div id="replyReceipt" class="receipt" role="status">开场后可以发评论；同类呼声合并回应。</div>
+      </section>
+      <section class="gift-section" aria-label="模拟礼物">
+        <div class="section-label"><b>02 / 礼物加戏</b><span>均为模拟 · 不扣费</span></div>
+        <div class="gifts">
+          <button class="gift coffee" data-gift="coffee" disabled><span class="gift-art"><svg viewBox="0 0 80 70" aria-hidden="true"><defs><linearGradient id="cup" x2="1" y2="1"><stop stop-color="#fff5df"/><stop offset="1" stop-color="#cb915c"/></linearGradient></defs><path d="M22 22h34v19c0 19-34 19-34 0z" fill="url(#cup)"/><path d="M55 26c22-3 17 24 0 18" fill="none" stroke="#deb685" stroke-width="6"/><ellipse cx="39" cy="22" rx="17" ry="5" fill="#614632"/><path d="M33 13c-7-7 6-7 0-13m12 13c-7-7 6-7 0-13" stroke="#e9ccb1" stroke-width="2" fill="none"/><ellipse cx="41" cy="59" rx="28" ry="4" fill="#dbb98f"/></svg></span><b>续命咖啡</b><small>优雅 → 超大杯 → 抱桶</small><span class="gift-level" data-level="coffee">送一份 ↗</span></button>
+          <button class="gift wind" data-gift="wind" disabled><span class="gift-art"><svg viewBox="0 0 80 70" aria-hidden="true"><path d="M12 28h37c19 0 19-20 5-20-8 0-8 8-5 10M7 39h50c17 0 17 20 2 20-7 0-9-7-5-10M19 50h17" fill="none" stroke="#a9dce8" stroke-width="5" stroke-linecap="round"/><path d="m14 7 17 3-2 13-17-3zm24 48 10 5-6 10-10-5z" fill="#edf6f4" opacity=".8"/></svg></span><b>下班的风</b><small>吹乱发 → 报表起飞</small><span class="gift-level" data-level="wind">送一份 ↗</span></button>
+          <button class="gift party" data-gift="party" disabled><span class="gift-art"><svg viewBox="0 0 80 70" aria-hidden="true"><path d="m16 61 12-37 27 27z" fill="#d7a3c4"/><path d="m24 39 16 15m-12-25 23 20" stroke="#f7dfba" stroke-width="5"/><path d="m45 14 4-10m11 21 12-3M47 34l7-9M30 13l-3-6m37 39 8 5" stroke="#e3ba78" stroke-width="4" stroke-linecap="round"/><path d="m56 5 8 4-4 9-8-4zM34 22l7-4 3 6-7 4z" fill="#a9dce8"/></svg></span><b>派对礼炮</b><small>礼花 → 偷跳 → 放飞</small><span class="gift-level" data-level="party">送一份 ↗</span></button>
+        </div>
+        <div class="combo-tip"><span class="combo-symbol">×3</span><p><b>同一种，12 秒内连送升级</b><small>每种 3 档表演；人多时合演，名字都会记下。</small></p></div>
+        <div id="giftReceipt" class="receipt gift-receipt" role="status">咖啡、风、礼炮，会让她露出三个不同的自己。</div>
+      </section>
+      <section class="live-feed"><div class="section-label"><b>正在发生</b><span id="queueStatus">等你开场</span></div><div id="queue" class="queue"></div><ol id="feed" aria-label="互动记录"><li class="empty-feed">这轮的名场面，由你开头。</li></ol></section>
+      <details class="crowd"><summary>试试很多人同时互动 <span>＋</span></summary><p>这些观众由本页模拟；每个朋友打开链接，各玩各的一轮。</p><div><button id="crowd" disabled>加入 12 位模拟观众</button><button id="burst" disabled>一波 50 条评论 + 9 份礼物</button></div></details>
+    </aside>
+  </div>
+  <footer><p>虚构成年角色 · AI 影像与合成配音 · 免费模拟礼物</p><span>90 秒互动演示，未接入抖音或真实支付。评论使用意图匹配与预设回应。</span></footer>
+</main>
+<div id="mobileDock" class="mobile-dock" hidden>
+  <form id="mobileForm" hidden><label class="sr-only" for="mobileComment">手机评论</label><input id="mobileComment" maxlength="160" placeholder="下班啦？涨薪？还是夸夸她？"><button type="submit" aria-label="发送手机评论">↑</button></form>
+  <div class="mobile-actions"><button id="mobileTalk"><span>⌨</span><b>发评论</b></button><button data-gift="coffee" class="mobile-gift"><span>☕</span><b>续命咖啡</b><small>连送升级</small></button><button data-gift="wind" class="mobile-gift"><span>≋</span><b>下班的风</b><small>连送升级</small></button><button data-gift="party" class="mobile-gift"><span>✧</span><b>派对礼炮</b><small>连送升级</small></button></div>
+</div><div id="toast" role="status" hidden></div>
+</body></html>
