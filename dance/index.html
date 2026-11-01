@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>自然舞蹈 · 纯 AI 样片</title>
+  <meta name="description" content="约 12 秒纯 AI 跳舞样片，固定机位、连续全身动作。打开声音观看，也可下载原片。">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f0eee7; color: #242c2e; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    main { min-height: 100svh; display: grid; place-items: center; padding: 24px 16px; }
+    .sample { width: min(100%, 440px); }
+    header { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    h1 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: .05em; }
+    .tag { color: #536269; font-size: 11px; letter-spacing: .06em; border: 1px solid #c8cfce; border-radius: 20px; padding: 5px 9px; }
+    .screen { display: flex; width: fit-content; max-width: 100%; margin-inline: auto; background: #141817; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 16px #26373310; }
+    video { display: block; height: 76svh; max-height: 780px; max-width: 100%; aspect-ratio: 9/16; object-fit: contain; }
+    p { margin: 14px 0 0; color: #536068; font-size: 13px; line-height: 1.8; }
+    footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 11px; font-size: 11px; color: #64716f; }
+    a { color: #385d71; text-underline-offset: 4px; padding: 5px 0; }
+    a:focus-visible { outline: 2px solid #385d71; outline-offset: 5px; }
+    @media(max-width:480px) { main { padding: 16px 12px; } video { height: 73svh; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="sample" aria-label="纯 AI 跳舞样片播放器">
+      <header><h1>自然舞蹈</h1><span class="tag">纯 AI 样片 · 约 12 秒</span></header>
+      <div class="screen"><video controls playsinline preload="metadata" poster="poster.jpg" aria-label="纯 AI 跳舞样片，包含伴奏"><source src="dance-sample.mp4" type="video/mp4">请使用支持 HTML5 视频的浏览器，或下载 MP4 观看。</video></div>
+      <p>打开声音，看完整段动作。<br>固定机位 · 原创人物 · 连续全身表演</p>
+      <footer><span>AI 生成画面与伴奏</span><a href="dance-sample.mp4" download="纯AI跳舞样片.mp4">下载 MP4</a></footer>
+    </section>
+  </main>
+</body>
+</html>
